@@ -103,6 +103,15 @@ export const integrationDefs = {
     defaultPort: 8989,
     apiKeySettingsPath: "/settings/general",
   },
+  sportarr: {
+    name: "Sportarr",
+    secretKinds: [["apiKey"]],
+    iconUrl: "https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons@master/svg/sportarr.svg",
+    category: ["calendar", "mediaOrganizer"],
+    documentationUrl: createDocumentationLink("/docs/integrations/sportarr"),
+    defaultPort: 1867,
+    apiKeySettingsPath: "/settings/general",
+  },
   radarr: {
     name: "Radarr",
     secretKinds: [["apiKey"]],

@@ -288,6 +288,7 @@ export type HomarrDocumentationPath =
   | "/docs/integrations/aria2"
   | "/docs/integrations/slskd"
   | "/docs/integrations/sonarr"
+  | "/docs/integrations/sportarr"
   | "/docs/integrations/radarr"
   | "/docs/integrations/lidarr"
   | "/docs/integrations/readarr"

@@ -33,6 +33,12 @@ describe("matchIntegrationKind", () => {
     expect(matchIntegrationKind("Sonarr")).toBe("sonarr");
   });
 
+  it("matches sportarr and not sonarr for a sportarr container", () => {
+    expect(extractContainerImageName("sportarr/sportarr:latest")).toBe("sportarr");
+    expect(matchIntegrationKind("sportarr")).toBe("sportarr");
+    expect(matchIntegrationKind("Sportarr")).toBe("sportarr");
+  });
+
   it("matches icon slug for pi-hole", () => {
     expect(matchIntegrationKind("pi-hole")).toBe("piHole");
   });
